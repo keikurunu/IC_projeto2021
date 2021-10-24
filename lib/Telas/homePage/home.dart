@@ -64,59 +64,82 @@ class _HomepageState extends State<Homepage> {
           children: [
             new GridView.count(
               primary: false,
-              padding: const EdgeInsets.all(30),
-              crossAxisSpacing: 25,
-              mainAxisSpacing: 25,
+              padding: const EdgeInsets.all(25),
+              crossAxisSpacing: 20,
+              mainAxisSpacing: 20,
               crossAxisCount: 1,
               children: <Widget>[
                 Card(
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
-                      print('Card tapped.');
+                      Navigator.of(context).pushNamed('Agenda');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
-                      child: Text('Agenda'),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        GridTile(
+                          footer: Container(
+                            color: Colors.pink[50],
+                            child: Center(
+                              child: Text(
+                                'Agenda',
+                                textScaleFactor: 4,
+                              ),
+                            ),
+                          ),
+                          child: Ink.image(
+                            image: AssetImage(
+                              'assets/Imagens/AgendaHome.jpg',
+                            ),
+                            fit: BoxFit.cover,
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),
                 Card(
-                  child: InkWell(
-                    splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {
-                      print('Card tapped.');
-                    },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
-                      child: Text('Graficos'),
-                    ),
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
                   ),
-                ),
-                Card(
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
                       print('Card tapped.');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
                       child: Text('Fluxogramas'),
                     ),
                   ),
                 ),
                 Card(
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
                       print('Card tapped.');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
                       child: Text('Exames Laboratoriais'),
                     ),
                   ),
@@ -130,58 +153,81 @@ class _HomepageState extends State<Homepage> {
             new GridView.count(
               primary: false,
               padding: const EdgeInsets.all(30),
-              crossAxisSpacing: 25,
-              mainAxisSpacing: 25,
+              crossAxisSpacing: 20,
+              mainAxisSpacing: 20,
               crossAxisCount: 1,
               children: <Widget>[
                 Card(
-                  child: InkWell(
-                    splashColor: Colors.blue.withAlpha(30),
-                    onTap: () {
-                      print('Card tapped.');
-                    },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
-                      child: Text('Diagnósticos NANDA'),
-                    ),
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
                   ),
+                  child: InkWell(
+                      splashColor: Colors.blue.withAlpha(30),
+                      onTap: () {
+                        print('Card tapped.');
+                      },
+                      child: Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Text('Diagnósticos NANDA'),
+                      )),
                 ),
                 Card(
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
                       print('Card tapped.');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
                       child: Text('Livro Atenção saude da mulher'),
                     ),
                   ),
                 ),
                 Card(
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
                       print('Card tapped.');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
                       child: Text('Livros Atenção Básica SUS'),
                     ),
                   ),
                 ),
                 Card(
+                  clipBehavior: Clip.antiAlias,
+                  color: Colors.pink[50],
+                  shadowColor: Colors.black54,
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
                   child: InkWell(
                     splashColor: Colors.blue.withAlpha(30),
                     onTap: () {
                       print('Card tapped.');
                     },
-                    child: const SizedBox(
-                      width: 300,
-                      height: 100,
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
                       child: Text('Pareceres Normativos'),
                     ),
                   ),

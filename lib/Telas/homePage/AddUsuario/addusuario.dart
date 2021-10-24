@@ -128,7 +128,7 @@ class addUsuario extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    height: 240,
+                    height: 200,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10),
@@ -140,7 +140,6 @@ class addUsuario extends StatelessWidget {
                       ],
                     ),
                     child: TextField(
-                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         labelText: 'Comentarios',

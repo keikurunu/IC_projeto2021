@@ -21,6 +21,8 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  table_calendar: 
+
   path:  
   flutter:
     sdk: flutter
@@ -32,6 +34,7 @@ dependencies:
   mobx: 
   flutter_mobx: 
   get_it:
+  syncfusion_flutter_calendar: ^19.3.46
 
 dev_dependencies:
   mobx_codegen: 
@@ -61,6 +64,7 @@ flutter:
   - assets/Imagens/imagesEntada.png
   - assets/Imagens/imageHome.jpg
   - assets/Imagens/Userimage.png
+  - assets/Imagens/AgendaHome.jpg
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
